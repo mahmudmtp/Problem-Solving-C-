@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t; cin>>t;
+    while(t--){
+            
+        int a,b,c,d;
+        cin>>a>>b>>c>>d;
+    
+        int maxx=max(a,b);
+        int minn=min(a,b);
+        int maax=max(c,d);
+        int miin=min(c,d);
+
+        if(maax>minn and maxx>miin)
+            cout<<"YES"<<'\n';
+        else
+            cout<<"NO"<<'\n';
+    }
+    return 0;
+}
