@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t; cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        string s,s1;
+        cin>>s>>s1;
+        for(int i=0; i<s.size(); i++){
+            if(s[i]=='B')
+                s[i]='G';
+            if(s1[i]=='B')
+                s1[i]='G';
+        }
+        if(s==s1)
+            cout<<"Yes"<<'\n';
+        else
+            cout<<"No"<<'\n';
+    }
+    return 0;
+}
