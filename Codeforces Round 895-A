@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t; cin>>t;
+    while(t--){
+        int a,b,c;
+        cin>>a>>b>>c;
+        int d=(abs(a-b)+1)/2;
+        int ans=(d+c-1)/c;
+        cout<<ans<<'\n';
+    }
+    return 0;
+}
