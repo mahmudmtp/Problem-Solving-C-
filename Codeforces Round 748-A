@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b,c;
+        cin>>a>>b>>c;
+        int res1=max(a,max(b,c)+1);
+        cout<<res1-a<<" ";
+        int res2=max(b,max(a,c)+1);
+        cout<<res2-b<<" ";
+        int res3=max(c,max(a,b)+1);
+        cout<<res3-c<<'\n';
+    }
+    return 0;
+}
