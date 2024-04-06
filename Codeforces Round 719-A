@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t; cin>>t;
+    while(t--){
+        int n; cin>>n;
+        string s; cin>>s;
+        char c[26]={0};
+        int cnt=0;
+        for(int i=0; i<s.size(); i++){
+            c[s[i]-'A']++;
+            if(c[s[i]-'A']>1 and s[i-1]!=s[i]){
+                cnt++;
+            }
+        }
+        if(cnt!=0){
+            cout<<"No"<<'\n';
+        }
+        else{
+            cout<<"Yes"<<'\n';
+        }
+    }
+    return 0;
+}
