@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int t;
+    cin>>t;
+    while(t--){
+        long long int a,b;
+        cin>>a>>b;
+        int x=abs(a-b);
+        int y=x%10!=0;
+        int res=y+x/10;
+        cout<<res<<'\n';
+    }
+    return 0;
+}
