@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t; cin>>t;
+    while(t--){
+        int a,b,c;
+        cin>>a>>b>>c;
+        int res,res1;
+        res=abs(a-1);
+        res1=abs(b-c)+(c-1);
+        if(res==res1) cout<<3<<'\n';
+        else if(res1>res) cout<<1<<'\n';
+        else cout<<2<<'\n';
+    }
+    return 0;
+}
