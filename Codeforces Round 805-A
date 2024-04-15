@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int a=1;
+        while(a*10<=n)
+            a*=10;
+        cout<<n-a<<'\n';
+    }
+    return 0;
+}
