@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--){
+        string a;
+        cin>>a;
+        if(a.size()==2){
+            cout<<a<<'\n';
+            continue;
+        }
+        string b="";
+        b+=a[0];
+        for(int i=1; i<a.size(); i+=2){
+            b+=a[i];
+        }
+        cout<<b<<'\n';
+    }
+    return 0;
+}
