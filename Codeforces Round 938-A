@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t; cin>>t;
+    while(t--){
+        int n,a,b;
+        cin>>n>>a>>b;
+        int res=0;
+        res+=n/2*b;
+        if(n%2)
+            res+=a;
+        cout<<min(n*a,res)<<'\n';
+    }
+    return 0;
+}
